@@ -1,0 +1,38 @@
+.navigation{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+}
+.navigation__link{
+  text-decoration: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  display: block;
+  position: relative;
+  transition: 0.3s;
+}
+
+.navigation__link::before{
+  content:"";
+  position: absolute;
+  bottom: 0; left: 50%;
+  transform: translate(-50%) scaleX(0);
+  width: 90%;
+  height: 2px;
+  background: currentColor;
+  transition: inherit;
+}
+
+.navigation__link:hover::before{
+  transform: translate(-50%) scaleX(1);
+}
+
+.navigation__link img{
+  width:25px ;
+  object-fit: cover;
+}

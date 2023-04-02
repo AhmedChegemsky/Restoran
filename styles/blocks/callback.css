@@ -1,0 +1,25 @@
+.callback{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.callback p.text{
+  max-width: 200px;
+}
+
+.callback__phone{
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-weight: 600;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.callback__phone img{
+  width: 20px;
+  object-fit: cover;
+}
